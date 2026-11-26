@@ -1,0 +1,55 @@
+# publiccode.yml — metadati per il catalogo Developers Italia / metadata for the Developers Italia catalogue
+publiccodeYmlVersion: "0"
+
+name: eduwisp-users
+url: "https://github.com/EduWISP/eduwisp-users"
+landingURL: "https://eduwisp.github.io/docs/architettura/architettura/"
+platforms:
+  - web
+  - linux
+
+categories:
+  - identity-management
+  - it-security
+
+developmentStatus: concept
+softwareType: "addon"
+
+intendedAudience:
+  scope:
+    - education
+  countries:
+    - IT
+
+description:
+  it:
+    shortDescription: "EduWISP — Core e identità"
+    longDescription: "Tenant, utenti, ruoli, gruppi, autenticazione, autorizzazioni e multi-tenancy. È la base di tutti gli altri moduli. Fa parte di EduWISP, piattaforma open source e gratuita per la gestione dei dispositivi digitali di proprietà delle scuole, con MDM, gestione scolastica, Family Control e prevenzione del cyberbullismo. Il progetto è in fase di progettazione e rispetta come vincolo bloccante il GDPR e la normativa italiana su privacy e minori. Documentazione: https://eduwisp.github.io/docs/"
+    documentation: "https://eduwisp.github.io/docs/"
+    features:
+      - "Core e identità"
+  en:
+    shortDescription: "EduWISP — Core & Identity"
+    longDescription: "Tenants, users, roles, groups, authentication, authorisation and multi-tenancy. The foundation of every other module. Part of EduWISP, a free and open-source platform to manage school-owned digital devices, with MDM, school management, family control and cyberbullying prevention. The project is in the design phase and treats GDPR and Italian law on privacy and minors as a blocking constraint. Documentation: https://eduwisp.github.io/docs/en/"
+    documentation: "https://eduwisp.github.io/docs/en/"
+    features:
+      - "Core & Identity"
+
+legal:
+  license: AGPL-3.0-or-later
+  mainCopyrightOwner: Michele Salerno
+
+organisation:
+  name: EduWISP
+  uri: "https://github.com/EduWISP"
+
+maintenance:
+  type: community
+  contacts:
+    - name: Michele Salerno
+
+localisation:
+  localisationReady: true
+  availableLanguages:
+    - it
+    - en
