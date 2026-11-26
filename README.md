@@ -6,7 +6,7 @@
 
 Tenant, utenti, ruoli, gruppi, autenticazione, autorizzazioni e multi-tenancy. È la base di tutti gli altri moduli.
 
-> 🚧 **Stato: progettazione.** Questo repository non contiene ancora codice. La progettazione è nella [documentazione EduWISP](https://eduwisp.github.io/docs/architettura/architettura/).
+> 🧪 **Stato: prototipo v0.** Organizzazioni (tenant), appartenenze con ruolo e isolamento dei dati tra istituti. La progettazione è nella [documentazione EduWISP](https://eduwisp.github.io/docs/architettura/architettura/).
 
 🇬🇧 *Tenants, users, roles, groups, authentication, authorisation and multi-tenancy. The foundation of every other module. **Status: design phase**, no code yet. See the [design docs](https://eduwisp.github.io/docs/en/architecture/architecture/).*
 
@@ -15,6 +15,19 @@ Tenant, utenti, ruoli, gruppi, autenticazione, autorizzazioni e multi-tenancy. �
 - Progettazione / Design: <https://eduwisp.github.io/docs/architettura/architettura/>
 - Mappa dei repository / Repository map: <https://eduwisp.github.io/docs/architettura/repository/>
 - Documentazione del modulo / Module docs: [`docs/user/`](docs/user/) · [`docs/developer/`](docs/developer/)
+
+## Cosa contiene il prototipo / What the prototype contains
+
+- `Organization`: il tenant (istituto o rete di istituti).
+- `Membership`: utente + organizzazione + ruolo (`school_admin`, `it_admin`, `teacher`).
+- `OrganizationOwned`: modello astratto per i dati che appartengono a un tenant.
+- `tenancy.organizations_for()` e `OrganizationScopedAdminMixin`: gli altri moduli li usano per mostrare a ciascuno **solo i dati della propria organizzazione**.
+- Pie' di pagina dell'amministrazione con l'attribuzione obbligatoria «Basato su EduWISP» e il link al codice sorgente (AGPL, sezioni 7(b) e 13).
+
+```bash
+pip install -e ".[test]"
+pytest
+```
 
 ## Dipendenze / Dependencies
 
