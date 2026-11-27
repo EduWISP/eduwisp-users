@@ -1,0 +1,14 @@
+{% extends "admin/base.html" %}
+{# SPDX-License-Identifier: AGPL-3.0-or-later #}
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | EduWISP{% endblock %}
+{% block extrastyle %}{{ block.super }}{% if eduwisp_environment_notice %}<style>.eduwisp-notice{background:#b45309;color:#fff;padding:.6em 2em;font-weight:600;text-align:center}</style>{% endif %}{% endblock %}
+{% block header %}{% if eduwisp_environment_notice %}<div class="eduwisp-notice" role="alert">{{ eduwisp_environment_notice }}</div>{% endif %}{{ block.super }}{% endblock %}
+{% block branding %}<div id="site-name"><a href="{% url 'admin:index' %}">EduWISP</a></div>{% endblock %}
+{% block footer %}
+<div id="footer" style="padding: 1em 2em; font-size: .85em; opacity: .8;">
+  {# Attribuzione obbligatoria: AGPL-3.0 sezione 7(b) e codice sorgente: sezione 13. Vedi NOTICE.md #}
+  Basato su EduWISP — <a href="https://github.com/EduWISP">https://github.com/EduWISP</a>
+  · Software libero con licenza <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL-3.0-or-later</a>
+  · <a href="https://github.com/EduWISP">Codice sorgente</a>
+</div>
+{% endblock %}
