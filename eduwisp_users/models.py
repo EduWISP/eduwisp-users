@@ -25,11 +25,16 @@ class Organization(models.Model):
 
 
 class Role(models.TextChoices):
-    """Ruoli del prototipo. L'elenco completo è nella documentazione (gestione scolastica)."""
+    """Ruoli negli istituti (ADR-0018).
+
+    L'amministratore di sistema non è un ruolo di istituto: è un account di piattaforma
+    (``is_superuser``) che vede e configura tutti gli istituti.
+    """
 
     SCHOOL_ADMIN = "school_admin", "amministratore dell'istituto"
     IT_ADMIN = "it_admin", "amministratore IT"
     TEACHER = "teacher", "docente"
+    GUARDIAN = "guardian", "genitore o tutore"
 
 
 class Membership(models.Model):
