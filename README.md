@@ -6,14 +6,14 @@
 
 Tenant, utenti, ruoli, gruppi, autenticazione, autorizzazioni e multi-tenancy. È la base di tutti gli altri moduli.
 
-> 🧪 **Stato: prototipo v0.** Organizzazioni (tenant), appartenenze con ruolo e isolamento dei dati tra istituti. La progettazione è nella [documentazione EduWISP](https://eduwisp.github.io/docs/architettura/architettura/).
+> 🧪 **Stato: prototipo v0.** Organizzazioni (tenant), appartenenze con ruolo e isolamento dei dati tra istituti. La progettazione è nella [documentazione EduWISP](https://eduwisp.org/docs/architettura/architettura/).
 
-🇬🇧 *Tenants, users, roles, groups, authentication, authorisation and multi-tenancy. The foundation of every other module. **Status: design phase**, no code yet. See the [design docs](https://eduwisp.github.io/docs/en/architecture/architecture/).*
+🇬🇧 *Tenants, users, roles, groups, authentication, authorisation and multi-tenancy. The foundation of every other module. **Status: design phase**, no code yet. See the [design docs](https://eduwisp.org/docs/en/architecture/architecture/).*
 
 ## Documentazione / Documentation
 
-- Progettazione / Design: <https://eduwisp.github.io/docs/architettura/architettura/>
-- Mappa dei repository / Repository map: <https://eduwisp.github.io/docs/architettura/repository/>
+- Progettazione / Design: <https://eduwisp.org/docs/architettura/architettura/>
+- Mappa dei repository / Repository map: <https://eduwisp.org/docs/architettura/repository/>
 - Documentazione del modulo / Module docs: [`docs/user/`](docs/user/) · [`docs/developer/`](docs/developer/)
 
 ## Cosa contiene il prototipo / What the prototype contains
@@ -35,7 +35,7 @@ pytest
 
 ## Privacy
 
-Dati personali previsti e regole: [PRIVACY.md](PRIVACY.md). Il rispetto della normativa su privacy e minori è un vincolo bloccante ([ADR-0008](https://eduwisp.github.io/docs/decisioni/0008-conformita-normativa/)).
+Dati personali previsti e regole: [PRIVACY.md](PRIVACY.md). Il rispetto della normativa su privacy e minori è un vincolo bloccante ([ADR-0008](https://eduwisp.org/docs/decisioni/0008-conformita-normativa/)).
 
 ## Responsabile del modulo / Module owner
 
@@ -47,7 +47,7 @@ Vedi [CONTRIBUTING](https://github.com/EduWISP/.github/blob/main/CONTRIBUTING.md
 
 ## Licenza / License
 
-**AGPL-3.0-or-later**, con termini aggiuntivi di attribuzione e tutela del nome (sezione 7): vedi [LICENSE](LICENSE) e [NOTICE.md](NOTICE.md). Chi usa o modifica EduWISP deve sempre indicare «Basato su EduWISP» e non può usare il nome e il logo per versioni modificate. Licenza scelta secondo le [linee guida AgID](https://eduwisp.github.io/docs/decisioni/0006-licenza/) per il software usato via rete.
+**AGPL-3.0-or-later**, con termini aggiuntivi di attribuzione e tutela del nome (sezione 7): vedi [LICENSE](LICENSE) e [NOTICE.md](NOTICE.md). Chi usa o modifica EduWISP deve sempre indicare «Basato su EduWISP» e non può usare il nome e il logo per versioni modificate. Licenza scelta secondo le [linee guida AgID](https://eduwisp.org/docs/decisioni/0006-licenza/) per il software usato via rete.
 
 *AGPL-3.0-or-later with additional attribution and trademark terms (section 7): see LICENSE and NOTICE.md.*
 

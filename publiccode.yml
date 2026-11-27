@@ -3,7 +3,7 @@ publiccodeYmlVersion: "0"
 
 name: eduwisp-users
 url: "https://github.com/EduWISP/eduwisp-users"
-landingURL: "https://eduwisp.github.io/docs/architettura/architettura/"
+landingURL: "https://eduwisp.org/docs/architettura/architettura/"
 platforms:
   - web
   - linux
@@ -24,14 +24,14 @@ intendedAudience:
 description:
   it:
     shortDescription: "EduWISP — Core e identità"
-    longDescription: "Tenant, utenti, ruoli, gruppi, autenticazione, autorizzazioni e multi-tenancy. È la base di tutti gli altri moduli. Fa parte di EduWISP, piattaforma open source e gratuita per la gestione dei dispositivi digitali di proprietà delle scuole, con MDM, gestione scolastica, Family Control e prevenzione del cyberbullismo. Il progetto è in fase di progettazione e rispetta come vincolo bloccante il GDPR e la normativa italiana su privacy e minori. Documentazione: https://eduwisp.github.io/docs/"
-    documentation: "https://eduwisp.github.io/docs/"
+    longDescription: "Tenant, utenti, ruoli, gruppi, autenticazione, autorizzazioni e multi-tenancy. È la base di tutti gli altri moduli. Fa parte di EduWISP, piattaforma open source e gratuita per la gestione dei dispositivi digitali di proprietà delle scuole, con MDM, gestione scolastica, Family Control e prevenzione del cyberbullismo. Il progetto è in fase di progettazione e rispetta come vincolo bloccante il GDPR e la normativa italiana su privacy e minori. Documentazione: https://eduwisp.org/docs/"
+    documentation: "https://eduwisp.org/docs/"
     features:
       - "Core e identità"
   en:
     shortDescription: "EduWISP — Core & Identity"
-    longDescription: "Tenants, users, roles, groups, authentication, authorisation and multi-tenancy. The foundation of every other module. Part of EduWISP, a free and open-source platform to manage school-owned digital devices, with MDM, school management, family control and cyberbullying prevention. The project is in the design phase and treats GDPR and Italian law on privacy and minors as a blocking constraint. Documentation: https://eduwisp.github.io/docs/en/"
-    documentation: "https://eduwisp.github.io/docs/en/"
+    longDescription: "Tenants, users, roles, groups, authentication, authorisation and multi-tenancy. The foundation of every other module. Part of EduWISP, a free and open-source platform to manage school-owned digital devices, with MDM, school management, family control and cyberbullying prevention. The project is in the design phase and treats GDPR and Italian law on privacy and minors as a blocking constraint. Documentation: https://eduwisp.org/docs/en/"
+    documentation: "https://eduwisp.org/docs/en/"
     features:
       - "Core & Identity"
 
