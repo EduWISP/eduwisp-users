@@ -50,3 +50,16 @@ def test_attribuzione_nell_interfaccia(client):
     client.login(username="admin", password="x")
     risposta = client.get("/admin/")
     assert "Basato su EduWISP" in risposta.content.decode()
+
+
+def test_avviso_ambiente_di_prova(client, settings):
+    settings.EDUWISP_ENVIRONMENT_NOTICE = "Ambiente di prova: non inserire dati reali"
+    get_user_model().objects.create_superuser("admin", password="x")
+    client.login(username="admin", password="x")
+    assert "Ambiente di prova: non inserire dati reali" in client.get("/admin/").content.decode()
+
+
+def test_nessun_avviso_se_non_configurato(client):
+    get_user_model().objects.create_superuser("admin", password="x")
+    client.login(username="admin", password="x")
+    assert "eduwisp-notice" not in client.get("/admin/").content.decode()
