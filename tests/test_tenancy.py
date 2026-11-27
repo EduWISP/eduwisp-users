@@ -63,3 +63,11 @@ def test_nessun_avviso_se_non_configurato(client):
     get_user_model().objects.create_superuser("admin", password="x")
     client.login(username="admin", password="x")
     assert "eduwisp-notice" not in client.get("/admin/").content.decode()
+
+
+def test_ruolo_famiglia(scuole):
+    a, _ = scuole
+    genitore = get_user_model().objects.create_user("genitore")
+    Membership.objects.create(user=genitore, organization=a, role=Role.GUARDIAN)
+    assert list(organizations_for(genitore, roles=[Role.GUARDIAN])) == [a]
+    assert list(organizations_for(genitore, roles=[Role.TEACHER])) == []
